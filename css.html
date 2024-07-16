@@ -1,0 +1,28 @@
+<p class="black-white">You loser!</p>
+<style>
+    :root{
+        --main-color: green;
+    }
+    @keyframes color-change {
+        0% {
+            color: var(--main-color);
+            background-color: white;
+        }
+        50%{
+            color: white;
+            background-color: var(--main-color);;
+        }
+        100% {
+            color: var(--main-color);;
+            background-color: white;
+        }
+    }
+    .black-white {
+        animation: color-change 3s infinite;
+        font-family: Verdana,Geneva,sans-serif; 
+        background-color: var(--main-color);
+        border-radius: 20px;
+        padding: 15px;
+        margin: 20px;
+    }
+</style>
